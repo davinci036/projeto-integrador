@@ -1,0 +1,41 @@
+
+#quadrado--preto {
+	width: 200px;
+	height: 100px;
+	position: relative;
+	top: 50px
+	left:100;
+	
+
+	animation-name: movimento; /* Aqui eu dou o nome da animacao */
+	animation-duration: 5s; /* Tempo de duracao da animacao */
+	animation-iteration-count: infinite; /* Contagem de iteracao */
+	animation-timing-function: linear; /* Funcao de tempo da animacao */
+	animation-direction: normal; /* Direcao da animacao */
+	
+}
+
+@keyframes movimento {
+	0% { /* PONTO INICIAL DA ANIMACAO */
+		left: -415px; 
+		top: 0px; 
+	}
+	25% {
+		left: 500px;
+		top: 120px;
+	}
+	50% {
+		left: 1500px;
+		top: 0px;
+		/*transform: rotate3d(1, 1, 1, 180deg);*/
+	}
+	75% {
+		left: 500px;
+		top: 120px;
+		
+	}
+	100% { /* PONTO FINAL DA ANIMACAO */
+		left: 0px; 
+		top: 0px;
+		transform: rotateZ(0deg); 
+	}
