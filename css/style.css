@@ -15,3 +15,7 @@ body{
 .fundo--cor{
 	background-color: green; 
 }
+
+.gradiente{
+	background-image: linear-gradient(to left, #0000FF, #00BFFF);
+}
